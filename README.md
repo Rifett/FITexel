@@ -51,7 +51,7 @@ Subclass of Node, implements unary negation operator.
 A helper class to parse expressions. When parseExpression function goes through an expression, it translates it from infix representation into postfix by invoking corresponding methods of CExprBuilder. 
 For example, in case of expression ```1 + 2```, parsing it will result in the following methods call chain of CExprBuilder: ```valNumber (1), valNumber(2), opAdd ()```.   
 
-This project is my university project, so the real implementation of parseExpression was hidden in a testing environment and to us it was provided as a statically linked library. 
+This project is my university project, so the real implementation of parseExpression was hidden in a testing environment and to us it was provided as a statically linked library (libexpression_parser.a). 
 As for CExprBuilder class, it is an abstract class and the real implementation is provided via it's subclass: ExpressionBuilder.
 
 ## CSpreadsheet Class and It's Functionality
